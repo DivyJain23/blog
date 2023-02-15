@@ -7,8 +7,8 @@ const useFetch = (url) => {
   
   useEffect(() => {
       setTimeout(() => {
-           fetch(url)
-          .then(res => {
+         fetch(url)
+         .then(res => {
               if(! res.ok){
                   throw Error('Could not fetch the data from the resource');
               }
